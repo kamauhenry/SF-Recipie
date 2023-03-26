@@ -1,0 +1,80 @@
+{% load static %}
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> RECIPES </title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Add icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <nav class="navigation hide" id="navigation">
+                <ul class="nav-list">
+                    <span class="close-icon" onclick="showcIconBar()"><i class="fa fa-close"></i></span>
+                    <li class="nav-item">
+                        <a href="####">Meals</a>
+                        <div class="sub-menu-i hide">
+                            <ul>
+                                <li><a href="#">Breakfast</a></li>
+                                <li><a href="#">Salad</a></li>
+                                <li><a href="#">Brunch</a></li>
+                                <li><a href="#">Dinner</a></li>
+                                <li><a href="#">Light Meal</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#####3">Kitchen Tips</a>
+                        <div class="sub-menu-i hide">
+                            <ul>
+                                <li><a href="#">Cookware and  Equipment</a></li>
+                                <li><a href="#">Ingredients</a></li>
+                                <li><a href="#">Spices</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#####3"> About us </a>
+                    </li>
+                    
+                </ul>
+                
+            </nav>
+            <a href="###" class="bar-icon" id="iconBar"  onclick="hideIconBar()"><i class="fa fa-bars"></i></a>
+            <div class="brand">My Recipies</div>
+        </div>
+
+          <!--search bar-->
+        <div class="search-bar">
+            <select name="" id="">
+                <option value="Everything">Meal</option>
+                <option value="titles">Meal name</option>
+                <option value="discription">Meal discription</option>
+            </select>
+            <input type="text" name="q" id="" placeholder="search...">
+            <button> 
+                <i class="fa fa-search"></i>
+                </button>
+        </div>
+    </header>
+    {% block content %}
+    {% endblock content %}
+
+
+    <footer>
+        <span>&copy; &nbsp;Myrecipies | All rights reserved </span>
+    </footer>
+    <script src="{% static 'main.js' %}"></script>
+</body>
+</html>
