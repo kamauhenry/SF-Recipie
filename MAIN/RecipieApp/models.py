@@ -23,7 +23,7 @@ class Cook(models.Model):
     def save(self,*args, **kwargs):
         if not self.slug:
             self.slug= slugify(self.fullname)
-        super(Post, self).save(*args, **kwargs)
+        super(Cook, self).save(*args, **kwargs)
 
 class Category (models.Model):
     title = models.CharField(max_length=50)
@@ -33,12 +33,12 @@ class Category (models.Model):
         verbose_name_plural = 'categoriess'
     
     def __str__(self):
-        return self.fullname
+        return self.title
 
     def save(self,*args, **kwargs):
         if not self.slug:
             self.slug= slugify(self.title)
-        super(Post, self).save(*args, **kwargs)
+        super(Category, self).save(*args, **kwargs)
 
 class Post(models.Model):
     title = models.CharField(max_length=250)
@@ -56,9 +56,6 @@ class Post(models.Model):
     def __str__(self):
         return self.title
     
-
-
-       
     def save(self,*args, **kwargs):
         if not self.slug:
             self.slug= slugify(self.title)
