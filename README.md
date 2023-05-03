@@ -1,4 +1,4 @@
-# Recipieapp
+# SF-Recipie
 
 Welcome to our recipe website, designed to help university students eat yummy meals on a budget. We understand that being a university student can be challenging, especially when it comes to managing finances and finding time to cook healthy and delicious meals. That's why we've created this platform to provide you with a wide range of recipes that are affordable, easy to make, and most importantly, delicious.
 Si kila siku Ugali mayai 😂
